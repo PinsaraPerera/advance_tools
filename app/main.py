@@ -6,6 +6,7 @@ from collections import defaultdict
 from app.db.base import Base
 from app.db.session import engine
 from app.models.transaction_model import Transaction
+from app.api.endpoints import transactions
 import time
 import asyncio
 
@@ -102,8 +103,7 @@ app.add_middleware(
 # Create all tables in the database
 Base.metadata.create_all(bind=engine)
 
-
-# app.include_router(query.router)
+app.include_router(transactions.router)
 
 @app.get("/")
 async def read_root():
