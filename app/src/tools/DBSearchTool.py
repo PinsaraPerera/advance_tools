@@ -38,8 +38,6 @@ class DBSearchTool(BaseTool):
             # Format results
             result = [
                 {
-                    "id": tx.id,
-                    "user_id": tx.user_id,
                     "amount": tx.transaction_amount,
                     "type": tx.transaction_type,
                     "description": tx.transaction_description,
