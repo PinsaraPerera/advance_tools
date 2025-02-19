@@ -510,7 +510,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "asyncpg", specifier = ">=0.30.0" },
-    { name = "crewai", extras = ["tools"], specifier = "==0.95.0" },
+    { name = "crewai", extras = ["tools"], specifier = ">=0.95.0,<1.0.0" },
     { name = "psycopg2", specifier = ">=2.9.10" },
     { name = "sqlalchemy", specifier = ">=2.0.38" },
 ]
