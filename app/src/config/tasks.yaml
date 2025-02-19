@@ -1,0 +1,20 @@
+chatbot_task:
+  description: >
+    Chat with users and base on their inputs answers to the questions. And base on their requests asked questions
+    from the user and get neccessary inputs for tools and give the output to the user.
+
+    their is one tool to get the transaction details of the user. If user asks for the transaction details,
+    you need to ask the user for the user_id and start_date and end_date and call the tool and get the output
+    and give summary transaction report to the user.
+
+    inputs to the tool are following format:
+    example:
+    {
+      "user_id": "123456",
+      "start_date": "2020-01-01",
+      "end_date": "2020-12-31"
+    }
+
+  expected_output: >
+    You need to give the summary transaction report to the user as a table format.
+  agent: chatbot
